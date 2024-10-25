@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health & Fitness App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="app-title">Health & Fitness App</h1>
+        <select id="language-selector">
+            <option value="en">English</option>
+            <option value="fr">Français</option>
+            <option value="ar">العربية</option>
+        </select>
+
+        <div class="input-section">
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" placeholder="Enter your weight">
+
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" placeholder="Enter your height">
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" placeholder="Enter your age">
+
+            <label for="goal">Choose your goal:</label>
+            <select id="goal">
+                <option value="lose_weight">Lose Weight</option>
+                <option value="strengthen_muscles">Strengthen Muscles</option>
+                <option value="both">Both</option>
+            </select>
+
+            <button onclick="calculate()">Calculate</button>
+        </div>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
